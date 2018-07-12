@@ -8,7 +8,7 @@ import java.util.List;
 public interface OrganizationDAO {
 
     //Set the data-source required to create a connection to the database
-    public void setDataSiource(DataSource ds);
+    public void setDataSource(DataSource ds);
 
     //Create a record in the organization table
     public boolean create(Organization org);
