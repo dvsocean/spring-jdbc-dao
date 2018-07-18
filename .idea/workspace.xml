@@ -3,11 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="4bd062ec-fb89-48bd-93a0-a213aaf33c75" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daoimpl/OrganizationRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoimpl/OrganizationRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/OrganizationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbcdao/dao/OrganizationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daoimpl/OrganizationDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbcdao/daoimpl/OrganizationDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daoimpl/OrganizationRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbcdao/daoimpl/OrganizationRowMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/launch/LaunchPad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/launch/LaunchPad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/organization.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/organization.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daoimpl/OrganizationRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daoimpl/OrganizationRowMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/organization.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/organization.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbcdao/org/Organization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans-cp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/beans-cp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans-cp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beans-cp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/OrganizationDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daoimpl/OrganizationDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daoimpl/OrganizationRowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/launch/LaunchPad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/launch/LaunchPad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Organization.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +27,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="OrganizationRowMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/OrganizationRowMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/daoimpl/OrganizationRowMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
@@ -29,10 +36,10 @@
         </entry>
       </file>
       <file leaf-file-name="OrganizationDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/OrganizationDaoImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/daoimpl/OrganizationDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+            <state relative-caret-position="183">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,24 +59,17 @@
       <file leaf-file-name="beans-cp.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/beans-cp.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-506" />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="LaunchPad.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/launch/LaunchPad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="76" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
+            <state relative-caret-position="188">
+              <caret line="23" column="61" lean-forward="true" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,16 +78,16 @@
         </entry>
       </file>
       <file leaf-file-name="Organization.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/Organization.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/org/Organization.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="101">
+              <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="OrganizationDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/OrganizationDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/dao/OrganizationDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
@@ -132,10 +132,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/beans-cp.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/organization.properties" />
         <option value="$PROJECT_DIR$/src/main/java/daoimpl/OrganizationRowMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/Organization.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jdbcdao/launch/LaunchPad.java" />
         <option value="$PROJECT_DIR$/src/main/java/launch/LaunchPad.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/beans-cp.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/jdbcdao/daoimpl/OrganizationDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -192,7 +195,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbcdao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jdbc-dao" type="b2602c69:ProjectViewProjectNode" />
@@ -200,15 +203,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="OrganizationDAO" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="jdbc-dao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-jdbc-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbcdao" type="462c0819:PsiDirectoryNode" />
               <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -217,17 +212,9 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbcdao" type="462c0819:PsiDirectoryNode" />
               <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
               <item name="OrganizationDaoImpl" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="jdbc-dao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-jdbc-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
-              <item name="OrganizationRowMapper" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="jdbc-dao" type="b2602c69:ProjectViewProjectNode" />
@@ -266,6 +253,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="jdbcdao" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -386,6 +379,7 @@
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25631768" />
       <window_info anchor="right" id="AdbCommander" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -397,7 +391,6 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -432,7 +425,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/OrganizationRowMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/daoimpl/OrganizationRowMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
@@ -456,21 +449,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/Organization.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/org/Organization.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/OrganizationDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/dao/OrganizationDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/OrganizationDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/daoimpl/OrganizationDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
@@ -480,14 +473,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/OrganizationRowMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/daoimpl/OrganizationRowMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/OrganizationDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/daoimpl/OrganizationDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
@@ -497,24 +490,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/Organization.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/org/Organization.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/OrganizationDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/dao/OrganizationDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/Organization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -523,14 +509,7 @@
         <state relative-caret-position="-506" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/OrganizationDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/OrganizationRowMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/daoimpl/OrganizationRowMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
@@ -544,27 +523,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/OrganizationDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/dao/OrganizationDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state relative-caret-position="15">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/org/Organization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/beans-cp.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbcdao/daoimpl/OrganizationDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans-cp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/launch/LaunchPad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="76" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
+        <state relative-caret-position="188">
+          <caret line="23" column="61" lean-forward="true" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

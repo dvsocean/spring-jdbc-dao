@@ -1,9 +1,9 @@
 package launch;
 
-import dao.OrganizationDAO;
-import daoimpl.OrganizationDaoImpl;
+import jdbcdao.dao.OrganizationDAO;
+import jdbcdao.daoimpl.OrganizationDaoImpl;
 import java.util.List;
-import org.Organization;
+import jdbcdao.org.Organization;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

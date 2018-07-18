@@ -1,4 +1,4 @@
-package org;
+package jdbcdao.org;
 
 public class Organization {
 
@@ -55,5 +55,17 @@ public class Organization {
 
     public void setSlogan(String slogan) {
         this.slogan = slogan;
+    }
+
+    @Override
+    public String toString() {
+        return "Organization{" +
+            "id=" + id +
+            ", company_name='" + company_name + '\'' +
+            ", year_of_inc=" + year_of_inc +
+            ", postal_code=" + postal_code +
+            ", employee_count=" + employee_count +
+            ", slogan='" + slogan + '\'' +
+            '}';
     }
 }

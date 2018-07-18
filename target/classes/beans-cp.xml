@@ -14,9 +14,10 @@
         <property name="url" value="${jdbc.url}"/>
     </bean>
 
-    <bean id="orgDao" class="daoimpl.OrganizationDaoImpl">
-        <property name="dataSource" ref="ds"/>
-    </bean>
+    <!--<bean id="orgDao" class="jdbcdao.daoimpl.OrganizationDaoImpl">-->
+        <!--<property name="dataSource" ref="ds"/>-->
+    <!--</bean>-->
 
     <context:property-placeholder location="organization.properties"/>
+    <context:component-scan base-package="jdbcdao"/>
 </beans>

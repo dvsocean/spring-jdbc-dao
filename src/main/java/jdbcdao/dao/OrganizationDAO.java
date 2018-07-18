@@ -1,6 +1,6 @@
-package dao;
+package jdbcdao.dao;
 
-import org.Organization;
+import jdbcdao.org.Organization;
 
 import javax.sql.DataSource;
 import java.util.List;

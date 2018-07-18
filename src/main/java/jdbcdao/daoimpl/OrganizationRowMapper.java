@@ -1,7 +1,7 @@
-package daoimpl;
+package jdbcdao.daoimpl;
 
 
-import org.Organization;
+import jdbcdao.org.Organization;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;
