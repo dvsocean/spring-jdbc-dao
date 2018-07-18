@@ -13,7 +13,7 @@ public class OrganizationRowMapper implements RowMapper<Organization> {
         Organization org = new Organization();
         org.setId(resultSet.getInt("id"));
         org.setCompany_name(resultSet.getString("company_name"));
-        org.setYear_of_inc(resultSet.getInt("year_of_inc"));
+        org.setYear_of_inc(resultSet.getInt("year_of_incorporation"));
         org.setPostal_code(resultSet.getInt("postal_code"));
         org.setEmployee_count(resultSet.getInt("employee_count"));
         org.setSlogan(resultSet.getString("slogan"));
