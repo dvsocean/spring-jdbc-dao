@@ -27,8 +27,7 @@ public class LaunchPad {
     for(Organization org: orgs){
       System.out.println(org);
     }
-
     ((ClassPathXmlApplicationContext) ctx).close();
   }
-
 }
+
