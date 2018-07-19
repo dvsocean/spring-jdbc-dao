@@ -10,7 +10,7 @@ public class Organization {
     private String slogan;
 
     public Organization(){
-        //
+        //empty on purpose
     }
 
     public Organization(String company_name, int year_of_inc, int postal_code, int employee_count, String slogan) {

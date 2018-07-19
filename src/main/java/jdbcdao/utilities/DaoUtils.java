@@ -30,7 +30,7 @@ public class DaoUtils {
 
   public static void createSeedData(OrganizationDAO dao){
     Organization org1 = new Organization("Amazon", 1998, 91789, 1200, "Work hard, have fun and make history");
-    Organization org2 = new Organization("GoodsByeOcean", 2016, 91789, 5500, "I struggled to make it now it pays off");
+    Organization org2 = new Organization("GoodsByOcean", 2016, 91789, 5500, "I struggled to make it now it pays off");
     Organization org3 = new Organization("NerdSchool", 2015, 91789, 1, "Blood sweat and tears at this school and now im here");
 
     List<Organization> orgs = new ArrayList<Organization>();

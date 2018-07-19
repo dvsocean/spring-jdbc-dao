@@ -22,16 +22,18 @@ public class LaunchPad {
 
   public static void main(String[] args) {
     ApplicationContext ctx = new ClassPathXmlApplicationContext("beans-cp.xml");
+
+    //create the bean
     OrganizationDAO dao = (OrganizationDaoImpl) ctx.getBean("orgDao");
 
-    //Creating seed data
+    //creating seed data
     DaoUtils.createSeedData(dao);
 
-    //List orgs
+    //List of the seed data we just created
     List<Organization> orgs = dao.getAllOrganizations();
     DaoUtils.printOrganizations(orgs, DaoUtils.READ_OPERATION);
 
-    //Create new org record
+    //create new org record
     Organization org = new Organization("Gen electric", 1994, 91789, 5487, "Your imagination at work");
     boolean isCreated = dao.create(org);
     DaoUtils.printSuccessFailure(DaoUtils.CREATE_OPERATION, isCreated);

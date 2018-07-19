@@ -20,7 +20,7 @@ public class OrganizationDaoImpl implements OrganizationDAO {
     }
 
     public boolean create(Organization org) {
-        String sql = "INSERT INTO organization (company_name, year_of_incorporation, postal_code, employee_count, slogan) " +
+        String sql = "INSERT INTO organizations (company_name, year_of_incorporation, postal_code, employee_count, slogan) " +
             "VALUES(?, ?, ?, ?, ?)";
         Object[] vals = new Object[]{org.getCompany_name(), org.getYear_of_inc(), org.getPostal_code(), org.getEmployee_count(), org.getSlogan()};
         return jdbcTemplate.update(sql, vals) == 1;
@@ -31,7 +31,7 @@ public class OrganizationDaoImpl implements OrganizationDAO {
     }
 
     public List<Organization> getAllOrganizations() {
-        String sql = "SELECT * FROM organization";
+        String sql = "SELECT * FROM organizations";
         return jdbcTemplate.query(sql, new OrganizationRowMapper());
     }
 
@@ -44,7 +44,7 @@ public class OrganizationDaoImpl implements OrganizationDAO {
     }
 
     public void cleanup() {
-        String sql = "TRUNCATE TABLE ";
+        String sql = "TRUNCATE TABLE organizations";
         jdbcTemplate.execute(sql);
     }
 }
