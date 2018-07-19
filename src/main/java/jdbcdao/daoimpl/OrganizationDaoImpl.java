@@ -44,8 +44,10 @@ public class OrganizationDaoImpl implements OrganizationDAO {
     }
 
     public boolean update(Organization org) {
-        String sql = "UPDATE organizations SET slogan = ? WHERE id = ?";
-        Object [] values = new Object[]{org.getSlogan(), org.getId()};
+        String sql = "UPDATE organizations SET company_name = ?, year_of_incorporation = ?, postal_code = ?,"+
+            " employee_count = ?,  slogan = ? WHERE id = ?";
+        Object [] values = new Object[]{org.getCompany_name(), org.getYear_of_inc(), org.getPostal_code(),
+            org.getEmployee_count(), org.getSlogan(), org.getId()};
         return jdbcTemplate.update(sql, values) == 1;
     }
 

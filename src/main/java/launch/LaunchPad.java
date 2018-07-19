@@ -23,35 +23,18 @@ public class LaunchPad {
     //create the bean
     OrganizationDAO dao = (OrganizationDaoImpl) ctx.getBean("orgDao");
 
-    //creating seed data
-    //DaoUtils.createSeedData(dao);
-
-    //List of the seed data we just created
-    //List<Organization> orgs = dao.getAllOrganizations();
-    //DaoUtils.printOrganizations(orgs, DaoUtils.READ_OPERATION);
-
-    //create new org record
-//    Organization org = new Organization("Gen electric", 1994, 91789, 5487, "Your imagination at work");
-//    boolean isCreated = dao.create(org);
-//    DaoUtils.printSuccessFailure(DaoUtils.CREATE_OPERATION, isCreated);
-//    DaoUtils.printOrganizationCount(dao.getAllOrganizations(), DaoUtils.CREATE_OPERATION);
-//    DaoUtils.printOrganizations(dao.getAllOrganizations(), DaoUtils.CREATE_OPERATION);
-
-    //get single org
-
-   Organization td = dao.getOrganization(12);
-   dao.delete(td);
-
-   List<Organization> finalOrgs = dao.getAllOrganizations();
-
-   for(Organization org: finalOrgs){
-     System.out.println(org);
-   }
 
 
-    //clean up
-//    dao.cleanup();
-//    DaoUtils.printOrganizationCount(dao.getAllOrganizations(), DaoUtils.CLEANUP_OPERATION);
+    Organization edited = dao.getOrganization(1);
+    edited.setCompany_name("Verys");
+    dao.update(edited);
+
+
+
+    List<Organization> inDatabase = dao.getAllOrganizations();
+    for(Organization o: inDatabase){
+      System.out.println(o);
+    }
 
     ((ClassPathXmlApplicationContext) ctx).close();
   }
