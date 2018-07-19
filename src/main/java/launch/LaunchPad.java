@@ -7,6 +7,8 @@ import jdbcdao.org.Organization;
 import jdbcdao.utilities.DaoUtils;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.BadSqlGrammarException;
 
 public class LaunchPad {
 
@@ -25,16 +27,26 @@ public class LaunchPad {
 
 
 
-    Organization edited = dao.getOrganization(1);
-    edited.setCompany_name("Verys");
-    dao.update(edited);
 
 
 
-    List<Organization> inDatabase = dao.getAllOrganizations();
-    for(Organization o: inDatabase){
-      System.out.println(o);
+
+    List<Organization> inDatabase = null;
+
+    try{
+      inDatabase = dao.getAllOrganizations();
+      for(Organization o: inDatabase){
+        System.out.println(o);
+      }
+    } catch (BadSqlGrammarException bge){
+      System.out.println("BGE exception message: " + bge.getMessage());
+      System.out.println("BGE exception class: " + bge.getClass());
+    } catch (DataAccessException e) {
+      System.out.println("exception message: " + e.getMessage());
+      System.out.println("exception class: " + e.getClass());
     }
+
+
 
     ((ClassPathXmlApplicationContext) ctx).close();
   }
