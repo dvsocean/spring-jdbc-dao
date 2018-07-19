@@ -20,6 +20,14 @@ public class DaoUtils {
     }
   }
 
+  public static void printUpdatedField(Organization org, String field){
+    System.out.println("You have updated " + field + "\nnew Slogan is " + org.getSlogan());
+  }
+
+  public static void printOrganization(Organization org, String operation){
+    System.out.println("\n***************Printing organization after invoking " + operation + " ********\n" + org);
+  }
+
   public static void printSuccessFailure(String opertion, boolean param){
     if(param){
       System.out.println("\nOperation " + opertion + " successful!");

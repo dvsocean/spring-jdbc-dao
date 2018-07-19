@@ -27,7 +27,9 @@ public class OrganizationDaoImpl implements OrganizationDAO {
     }
 
     public Organization getOrganization(Integer id) {
-        return null;
+        String sql = "SELECT * FROM organizations WHERE id = ?";
+        Object[] val = new Object[]{id};
+        return jdbcTemplate.queryForObject(sql, val, new OrganizationRowMapper());
     }
 
     public List<Organization> getAllOrganizations() {
@@ -36,11 +38,15 @@ public class OrganizationDaoImpl implements OrganizationDAO {
     }
 
     public boolean delete(Organization org) {
-        return false;
+        String sql = "DELETE FROM organizations WHERE id = ?";
+        Object[] toDelete = new Object[]{org.getId()};
+        return jdbcTemplate.update(sql, toDelete) == 1;
     }
 
     public boolean update(Organization org) {
-        return false;
+        String sql = "UPDATE organizations SET slogan = ? WHERE id = ?";
+        Object [] values = new Object[]{org.getSlogan(), org.getId()};
+        return jdbcTemplate.update(sql, values) == 1;
     }
 
     public void cleanup() {
