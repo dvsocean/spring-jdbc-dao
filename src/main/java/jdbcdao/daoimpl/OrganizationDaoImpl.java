@@ -44,7 +44,7 @@ public class OrganizationDaoImpl implements OrganizationDAO {
     }
 
     public void cleanup() {
-        String sql = "TRUNCATE TABLE";
+        String sql = "TRUNCATE TABLE ";
         jdbcTemplate.execute(sql);
     }
 }

@@ -9,6 +9,18 @@ public class Organization {
     private int employee_count;
     private String slogan;
 
+    public Organization(){
+        //
+    }
+
+    public Organization(String company_name, int year_of_inc, int postal_code, int employee_count, String slogan) {
+        this.company_name = company_name;
+        this.year_of_inc = year_of_inc;
+        this.postal_code = postal_code;
+        this.employee_count = employee_count;
+        this.slogan = slogan;
+    }
+
     public int getId() {
         return id;
     }

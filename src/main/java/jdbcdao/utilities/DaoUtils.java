@@ -29,14 +29,14 @@ public class DaoUtils {
   }
 
   public static void createSeedData(OrganizationDAO dao){
-    Organization org1 = new Organization("Amazon", 1998, "91789", 1200, "Work hard, have fun and make history");
-    Organization org2 = new Organization("GoodsByeOcean", 2016, "95691", 5500, "I struggled to make it now it pays off");
-    Organization org3 = new Organization("NerdSchool", 2015, "91768", 1, "Blood sweat and tears at this school and now im here");
+    Organization org1 = new Organization("Amazon", 1998, 91789, 1200, "Work hard, have fun and make history");
+    Organization org2 = new Organization("GoodsByeOcean", 2016, 91789, 5500, "I struggled to make it now it pays off");
+    Organization org3 = new Organization("NerdSchool", 2015, 91789, 1, "Blood sweat and tears at this school and now im here");
 
     List<Organization> orgs = new ArrayList<Organization>();
-    orgs.add(1, org1);
-    orgs.add(2, org2);
-    orgs.add(3, org3);
+    orgs.add(0, org1);
+    orgs.add(1, org2);
+    orgs.add(2, org3);
 
     int createCount = 0;
     for(Organization org: orgs){
@@ -46,7 +46,9 @@ public class DaoUtils {
       }
       System.out.println("Created " + createCount + " organizations");
     }
-
   }
 
+  public static void printOrganizationCount(List<Organization> orgsList, String operation){
+    System.out.println("\n*************Currently we have " + orgsList.size() + " organizations after " + operation + " operation");
+  }
 }//End of class
