@@ -11,7 +11,6 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.BadSqlGrammarException;
 
 public class LaunchPad {
-
   /*
     SQL Server time offset issue --> to fix it..
 
@@ -31,20 +30,6 @@ public class LaunchPad {
 
 
 
-    List<Organization> inDatabase = null;
-
-    try{
-      inDatabase = dao.getAllOrganizations();
-      for(Organization o: inDatabase){
-        System.out.println(o);
-      }
-    } catch (BadSqlGrammarException bge){
-      System.out.println("BGE exception message: " + bge.getMessage());
-      System.out.println("BGE exception class: " + bge.getClass());
-    } catch (DataAccessException e) {
-      System.out.println("exception message: " + e.getMessage());
-      System.out.println("exception class: " + e.getClass());
-    }
 
 
 

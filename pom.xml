@@ -51,6 +51,20 @@
             <version>5.0.7.RELEASE</version>
         </dependency>
 
+        <!-- JAVA SERVER PAGES TAG LIBRARY -->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <!-- WEB MVC -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.0.7.RELEASE</version>
+        </dependency>
+
     </dependencies>
 
 

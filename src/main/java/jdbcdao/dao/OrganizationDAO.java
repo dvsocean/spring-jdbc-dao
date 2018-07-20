@@ -5,6 +5,7 @@ import jdbcdao.org.Organization;
 import javax.sql.DataSource;
 import java.util.List;
 
+
 public interface OrganizationDAO {
 
     //Set the data-source required to create a connection to the database
